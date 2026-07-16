@@ -1,0 +1,135 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="360" viewBox="0 0 1200 360" role="img" aria-labelledby="title desc">
+  <title id="title">Dhruv Patel - Lead Android Engineer</title>
+  <desc id="desc">A technical representation of modern mobile solutions and Kotlin Multiplatform architecture.</desc>
+
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0c10"/>
+      <stop offset="50%" stop-color="#0d0f14"/>
+      <stop offset="100%" stop-color="#050608"/>
+    </linearGradient>
+
+    <!-- Accent Gradients -->
+    <linearGradient id="kotlin-grad" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#803FE7"/>
+      <stop offset="50%" stop-color="#E2543D"/>
+      <stop offset="100%" stop-color="#F88909"/>
+    </linearGradient>
+    
+    <linearGradient id="android-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3ddc84"/>
+      <stop offset="100%" stop-color="#10b981"/>
+    </linearGradient>
+
+    <linearGradient id="ios-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="100%" stop-color="#0284c7"/>
+    </linearGradient>
+
+    <linearGradient id="shared-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#a855f7"/>
+      <stop offset="100%" stop-color="#6366f1"/>
+    </linearGradient>
+    
+    <linearGradient id="card-border" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3f3f46" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#18181b" stop-opacity="0.1"/>
+    </linearGradient>
+
+    <!-- Grid Pattern -->
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#242936" stroke-width="0.7" stroke-opacity="0.3"/>
+    </pattern>
+  </defs>
+
+  <!-- Background Card -->
+  <rect width="1200" height="360" rx="16" fill="url(#bg-grad)"/>
+  <rect width="1200" height="360" rx="16" fill="url(#grid)"/>
+  <rect width="1198" height="358" x="1" y="1" rx="15" fill="none" stroke="url(#card-border)" stroke-width="1.5"/>
+
+  <!-- Subtle glow on the right -->
+  <circle cx="950" cy="180" r="160" fill="#6366f1" opacity="0.1" filter="blur(60px)" />
+  <circle cx="1020" cy="120" r="100" fill="#3ddc84" opacity="0.08" filter="blur(50px)" />
+
+  <!-- Info Block (Left side) -->
+  <g transform="translate(60, 0)">
+    <!-- Category Badge -->
+    <g transform="translate(0, 55)">
+      <rect width="210" height="24" rx="12" fill="#1e2230" stroke="#313852" stroke-width="1"/>
+      <circle cx="16" cy="12" r="4" fill="#a855f7"/>
+      <text x="28" y="16" fill="#a6accd" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="700" letter-spacing="1">DHRUV PATEL PORTFOLIO</text>
+    </g>
+
+    <!-- Main Title -->
+    <text x="0" y="130" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="44" font-weight="800" letter-spacing="-0.5">Dhruv Patel</text>
+    
+    <!-- Subtitle -->
+    <text x="0" y="172" fill="url(#kotlin-grad)" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="18" font-weight="700" letter-spacing="0.5">Lead Android Engineer &amp; Mobile Architect</text>
+    
+    <!-- Tagline / Bio -->
+    <text x="0" y="212" fill="#9ba1b0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="14.5" font-weight="400" line-height="24">
+      14+ years of building sophisticated, scale-critical Android architectures, custom
+    </text>
+    <text x="0" y="235" fill="#9ba1b0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="14.5" font-weight="400">
+      multimedia workflows, and offline-first on-device LLMs with Compose Multiplatform.
+    </text>
+
+    <!-- Interactive Status Dot -->
+    <g transform="translate(0, 275)">
+      <!-- Active Pulse (Simulated Static Circle) -->
+      <circle cx="10" cy="10" r="7" fill="#10b981" opacity="0.2"/>
+      <circle cx="10" cy="10" r="4" fill="#10b981"/>
+      <text x="25" y="14" fill="#10b981" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="12" font-weight="700" letter-spacing="1">OPEN TO COLLABORATION</text>
+      
+      <!-- Stat 1 -->
+      <rect x="220" y="0" width="85" height="20" rx="4" fill="#18181b" stroke="#27272a" stroke-width="1"/>
+      <text x="228" y="14" fill="#a1a1aa" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11">exp: 14y+</text>
+
+      <!-- Stat 2 -->
+      <rect x="315" y="0" width="105" height="20" rx="4" fill="#18181b" stroke="#27272a" stroke-width="1"/>
+      <text x="323" y="14" fill="#a1a1aa" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11">focus: mobile</text>
+    </g>
+  </g>
+
+  <!-- Visual Proof: Kotlin Multiplatform Architecture Layout (Right side) -->
+  <g transform="translate(740, 50)">
+    <!-- Shared Library Box (Core Base) -->
+    <g transform="translate(60, 160)">
+      <rect width="260" height="90" rx="12" fill="#1e1b4b" fill-opacity="0.8" stroke="url(#shared-grad)" stroke-width="2"/>
+      <text x="20" y="30" fill="#e0e7ff" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="14" font-weight="700">:shared (KMP Module)</text>
+      <text x="20" y="52" fill="#c7d2fe" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11">├─ offline-db (SQLDelight)</text>
+      <text x="20" y="70" fill="#c7d2fe" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11">└─ on-device-llm (llama.cpp)</text>
+    </g>
+    
+    <!-- Android App Box (Top Left) -->
+    <g transform="translate(20, 20)">
+      <rect width="150" height="80" rx="12" fill="#062f1d" fill-opacity="0.8" stroke="url(#android-grad)" stroke-width="2"/>
+      <text x="15" y="30" fill="#d1fae5" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="14" font-weight="700">:androidApp</text>
+      <text x="15" y="52" fill="#a7f3d0" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11">├─ Jetpack Compose</text>
+      <text x="15" y="68" fill="#a7f3d0" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11">└─ NDK, Vulkan</text>
+    </g>
+
+    <!-- iOS App Box (Top Right) -->
+    <g transform="translate(210, 20)">
+      <rect width="150" height="80" rx="12" fill="#0c324e" fill-opacity="0.8" stroke="url(#ios-grad)" stroke-width="2"/>
+      <text x="15" y="30" fill="#e0f2fe" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="14" font-weight="700">:iosApp</text>
+      <text x="15" y="52" fill="#bae6fd" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11">├─ SwiftUI</text>
+      <text x="15" y="68" fill="#bae6fd" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11">└─ Swift Native</text>
+    </g>
+
+    <!-- Connecting Arrows / Paths -->
+    <!-- Shared to Android -->
+    <path d="M 95 160 L 95 110" fill="none" stroke="#6366f1" stroke-width="2" stroke-dasharray="4 2"/>
+    <polygon points="95,104 91,112 99,112" fill="#6366f1"/>
+
+    <!-- Shared to iOS -->
+    <path d="M 285 160 L 285 110" fill="none" stroke="#6366f1" stroke-width="2" stroke-dasharray="4 2"/>
+    <polygon points="285,104 281,112 289,112" fill="#6366f1"/>
+
+    <!-- Shared Core Node / Emblem -->
+    <circle cx="190" cy="130" r="14" fill="#a855f7"/>
+    <!-- Small K logo schematic (lines) -->
+    <path d="M 186 123 L 186 137 M 186 130 L 193 123 M 188 128 L 194 137" fill="none" stroke="#ffffff" stroke-width="1.8" stroke-linecap="round"/>
+  </g>
+</svg>

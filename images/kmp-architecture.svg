@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 400 300" role="img" aria-labelledby="title desc">
+  <title id="title">Kotlin Multiplatform Architecture Diagram</title>
+  <desc id="desc">Schematic showing :androidApp and :iosApp linking to a :shared core library.</desc>
+
+  <defs>
+    <linearGradient id="android-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3ddc84"/>
+      <stop offset="100%" stop-color="#10b981"/>
+    </linearGradient>
+
+    <linearGradient id="ios-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="100%" stop-color="#0284c7"/>
+    </linearGradient>
+
+    <linearGradient id="shared-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#a855f7"/>
+      <stop offset="100%" stop-color="#6366f1"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Glow background -->
+  <circle cx="200" cy="150" r="120" fill="#6366f1" opacity="0.12" filter="blur(40px)" />
+
+  <g transform="translate(10, 10)">
+    <!-- Shared Library Box (Core Base) -->
+    <g transform="translate(60, 170)">
+      <rect width="260" height="90" rx="12" fill="#1e1b4b" fill-opacity="0.9" stroke="url(#shared-grad)" stroke-width="2"/>
+      <text x="20" y="30" fill="#e0e7ff" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="14" font-weight="700">:shared (KMP Module)</text>
+      <text x="20" y="52" fill="#c7d2fe" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11">├─ offline-db (SQLDelight)</text>
+      <text x="20" y="70" fill="#c7d2fe" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11">└─ on-device-llm (llama.cpp)</text>
+    </g>
+    
+    <!-- Android App Box (Top Left) -->
+    <g transform="translate(20, 20)">
+      <rect width="150" height="80" rx="12" fill="#062f1d" fill-opacity="0.9" stroke="url(#android-grad)" stroke-width="2"/>
+      <text x="15" y="30" fill="#d1fae5" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="14" font-weight="700">:androidApp</text>
+      <text x="15" y="52" fill="#a7f3d0" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11">├─ Jetpack Compose</text>
+      <text x="15" y="68" fill="#a7f3d0" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11">└─ NDK, Vulkan</text>
+    </g>
+
+    <!-- iOS App Box (Top Right) -->
+    <g transform="translate(210, 20)">
+      <rect width="150" height="80" rx="12" fill="#0c324e" fill-opacity="0.9" stroke="url(#ios-grad)" stroke-width="2"/>
+      <text x="15" y="30" fill="#e0f2fe" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="14" font-weight="700">:iosApp</text>
+      <text x="15" y="52" fill="#bae6fd" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11">├─ SwiftUI</text>
+      <text x="15" y="68" fill="#bae6fd" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11">└─ Swift Native</text>
+    </g>
+
+    <!-- Connecting Arrows / Paths -->
+    <!-- Shared to Android -->
+    <path d="M 95 170 L 95 110" fill="none" stroke="#6366f1" stroke-width="2" stroke-dasharray="4 2"/>
+    <polygon points="95,104 91,112 99,112" fill="#6366f1"/>
+
+    <!-- Shared to iOS -->
+    <path d="M 285 170 L 285 110" fill="none" stroke="#6366f1" stroke-width="2" stroke-dasharray="4 2"/>
+    <polygon points="285,104 281,112 289,112" fill="#6366f1"/>
+
+    <!-- Shared Core Node / Emblem -->
+    <circle cx="190" cy="135" r="14" fill="#a855f7"/>
+    <!-- Small K logo schematic (lines) -->
+    <path d="M 186 128 L 186 142 M 186 135 L 193 128 M 188 133 L 194 142" fill="none" stroke="#ffffff" stroke-width="1.8" stroke-linecap="round"/>
+  </g>
+</svg>
